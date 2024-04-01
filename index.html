@@ -1,613 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head> 
-      <title> Akshay's Diary </title>
-      <meta charset="utf-8">
-      <meta http-equiv="content-type" content="text/html;charset=utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="apple-touch-icon" sizes="180x180"  href="favicon.ico"> 
-      <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico"> 
-      <link rel="icon" type="image/png" sizes="16x16"  href="favicon.ico"> 
-
-        <!-- Facebook Open Graph tags -->
-      <meta property="og:url" content="https://YashJain14.github.io" />
-      <meta property="og:title" content="Yash Jain" />
-      <meta property="og:description" content="The one and only/" />
-      <meta property="og:image" content="https://YashJain14.github.io/favicon.ico" />
-
-      <!-- Twitter Card (large image card) tags -->
-      <meta name="twitter:card" content="summary">
-      <meta name="twitter:creator" content="@YashChopra1411">
-      <meta name="twitter:title" content="Yash Jain">
-      <meta name="twitter:description" content="The one and only." />
-      <meta name="twitter:image" content="https://YashJain14.github.io/favicon.ico" />
-
-      <meta name="description" content="{{ The one and only. }}">
-      </head>
-
-    <style>
-    @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Merriweather&family=Poppins:ital@1&family=Shadows+Into+Light&family=Source+Sans+Pro:wght@300;400&display=swap');
-
-    @font-face {
-        font-family: 'XCharter';
-        font-style: normal;
-        src: url('fonts/XCharter.woff2') format('woff2');
-        font-display: swap;
-        font-weight: 400;  
-      }
-
-    @font-face {
-        font-family: 'XCharter';
-        font-style: normal;
-        src: url('fonts/XCharter-Bold.woff2') format('woff2');
-        font-display: swap;
-        font-weight: 600;  
-      }
-
-
-    :root{
-      --sans: "Source Sans Pro";
-      --serif: "XCharter", "Charter";
-    }
-
-      main{
-        width: 100%; 
-        max-width: 45rem; 
-        display: inline-block; 
-        text-align: justify; 
-        hyphens: auto;
-        padding-bottom: 5rem;
-        font-size: 13px;
-        line-height: 1.4em;
-      }
-
-      aside{
-        font-family: Caveat, sans-serif;
-        position: absolute;
-        width: 10rem;
-        margin-left: -12rem;
-        font-size: 15px;
-        line-height: 1.1em;
-        transform: rotateZ(-45deg);
-      }
-
-      .rightnote{
-        margin-left: 16.5rem;
-      }
-
-      .straight{
-        transform: rotateZ(-10deg);
-      }
-
-      .meta{
-        margin-left: -5rem;
-      }
-
-      .title{
-        width: 100%;
-        text-align: center;
-        font-color:#FFFFFF;
-        padding: 4em 0px 0em 0px;
-      }
-
-      h1{
-        line-height: 1.2em;
-        font-size: 4em;
-        font-color:#FFFFFF;
-        font-weight: 200;
-        font-variant: small-caps;
-      }
-
-      .left, .right{
-        max-width: 20.3rem;
-        display: inline-block;
-        padding: 1rem;
-        vertical-align: top;
-      }
-
-      .left p + p, .right p + p{
-        text-indent: 2em;
-      }
-
-      p{
-        margin: 2px 0px;
-        font-color:#FFFFFF;
-      }
-
-      body{
-        font-color:#FFFFFF;
-        text-align: center; 
-        padding: 3rem 5% 2rem 5%;
-        margin: 0px;
-        line-height: 1.5em;
-        text-rendering: optimizeLegibility;
-        font-family: var(--serif);
-        font-size: 18px;
-      }
-
-      body {
-        /*background: linear-gradient(to bottom, rgba(150, 150, 100, 0.1) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0.9) 50%, rgba(255, 255, 200, 0.1) 100%); */
-        background-image: url('https://media.istockphoto.com/id/1783612619/photo/mountain-range-with-visible-silhouettes-through-the-morning-fog-mountains-on-the-sky.webp?b=1&s=170667a&w=0&k=20&c=KcCLTTHxQrhU101qqESd-ujZWu4t7ackhzOqUCZcrZU='); 
-        font-color:#FFFFFF;
-      }
-
-
-      h2{
-        font-weight: 400;
-        font-color:#FFFFFF;
-        font-variant: small-caps;
-        font-size: 1.8em;
-        text-align: center;
-        margin-top: 1.4em;
-      }
-
-      h3{
-        font-weight: 800;
-        font-size: 1.5em;
-        font-color:#FFFFFF;
-        margin-top: 2em;
-      }
-
-      h4{
-        font-weight: 900;
-        font-variant: small-caps;
-        font-size: 1.2em;
-        margin-top: 1.5em;
-        font-color:#FFFFFF;
-        margin-bottom: 0.5rem;
-      }
-
-      li{
-        margin: 0.4rem 1rem;
-        padding-left: 0px;
-      }
-
-      ol{
-        padding-left: 0px;
-      }
-
-      table{
-        margin: 1rem 0em;
-      }
-
-      td, th{
-        padding: 1rem 2rem 0rem 0rem;
-        vertical-align: top;
-      }
-
-      th{
-        font-size: 1.2em;
-        padding-bottom: 0rem;
-        font-weight: 900;
-      }
-
-      td{
-        font-size: 1em;
-      }
-
-      thead th:nth-child(1) {
-        width: 37%;
-      }
-
-      thead th:nth-child(2) {
-        width: 63%;
-      }
-
-      a{
-        color: black;
-        text-decoration: underline;
-        text-underline-offset: 1px;
-        text-decoration-thickness: 1px;
-        font-color:#FFFFFF;
-      }
-
-      a:hover{
-        text-shadow: 0px 0px 0.5px black;
-      }
-
-      .header{
-        border-top: solid 1px black;
-        border-bottom: solid 1px black;
-        padding: 2rem 0rem;
-        margin-bottom: 1rem;
-        font-color:#FFFFFF;
-      }
-
-      .header-left{
-        width: calc(100% - 21rem);
-        display: inline-block;  
-      }
-
-      .header-right{
-        width: 16.5rem;
-        padding: 0px 0rem 0px 4rem;
-        display: inline-block;
-        vertical-align: top;
-        font-color:#FFFFFF;
-      }
-
-      .header h3{
-        margin-top: 0px;
-        font-variant: small-caps;
-        border-bottom: solid 0.5px black;
-        padding-bottom: 0.5rem;
-        font-color:#FFFFFF;
-      }
-
-      .header h4{
-        margin-bottom: 0.5em;
-        font-color:#FFFFFF;
-      }
-
-      .collection{
-        width: 100%;
-        border: solid 1px black;
-        margin: 1rem 0rem;
-      }
-
-      .collection-title{
-        padding: 0.3rem;
-        font-variant: small-caps;
-        font-size: 1.2em;
-        border-bottom: solid 1px black;
-      }
-
-      .item{
-        width: 50%;
-        height: auto;
-        display: inline-block;
-        vertical-align: top;
-        line-height: 0px;
-      }
-
-      .item img:hover{
-        filter: grayscale(0%);
-      }
-
-      .item img{
-        width: 100%;
-        height: 100%;
-        filter: grayscale(100%);
-      }
-
-      .slide-out{
-        height: 15rem;
-        border: solid 1px black;
-        position: absolute;
-        margin-left: -17.4rem;
-        background: white;
-        padding: 0rem 0.5rem 0rem 0.5rem;
-      }
-
-      .slide-out img{
-        height: 13rem;
-        margin: 1rem 0.5em;
-        border: solid 1px black;
-      }
-
-      .slide-out p{
-        display: inline-block;
-        width: 10rem;
-        vertical-align: top;
-        padding: 1rem;
-      }
-
-      .slide-out-title{
-        height: 2em;
-        font-size: 2rem;
-        transform: rotateZ(90deg);
-        width: fit-content;
-        display: inline-block;
-        position: absolute;
-      }
-
-      details{
-        border: solid 1px black;
-        padding: 0.5em 1em;
-        margin: 1rem 0rem 1rem 0rem;
-        font-size: 1.05em;
-      }
-
-      summary{
-        font-size: 1.2em;
-        padding: 0.3rem 0rem;
-      }
-
-      details[open] summary{
-        margin-bottom: 1rem;
-      }
-
-      details p{
-        text-align: left;
-      }
-
-      details img{
-        width: 100%;
-        margin: 1em 0rem;
-      }
-
-      hr{
-        margin: 2rem 0rem 0rem 0rem;
-      }
-
-      @media screen and (max-width: 1050px) {
-        aside{
-          display: none;
-        }
-
-        body{
-          padding: 3rem 3% 2rem 3%;
-          width: 94%;
-        }
-
-        .meta{
-          margin-left: 0px;
-        }
-
-      }
-
-
-      @media screen and (max-width: 740px) {
-
-      .left{
-          max-width: calc(50% - 0.6rem);
-          padding: 0px 0.5rem 0px 0rem;
-        }
-
-        .right{
-          max-width: calc(50% - 0.6rem);
-          padding: 0px 0rem 0px 0.5em;
-        }
-
-        .header-right{
-          padding-left: 3rem;
-          width: 17rem;
-        }
-
-        h2{
-          margin-top: 3rem;
-          margin-bottom: 2rem;
-        }
-
-      }
-
-      @media screen and (max-width: 600px) {
-
-        main{
-          font-size: 14px;
-        }
-
-        body{
-          padding: 3rem 5% 2rem 5%;
-          width: 90%;
-        }
-
-      .header-left{
-        width: 100%;
-        display: inline-block;  
-      }
-
-      .header-right{
-          width: 100%;
-          padding: 2.4rem 0rem 0px 0rem;
-          display: inline-block;
-          vertical-align: top;
-      }
-
-      .left, .right{
-        max-width: 100%;
-        padding: 0px;
-      }
-
-      }
-
-    </style>
-    </head> 
-    <body>
-
-      <main>
-        <p>Akshay's 2nd Endeavour</p>
-        <div class=title> <h1> Akshay's Diary </h1></div>
-        <p> Very interesting...</p>
-        <div class=header>
-            <div class=header-left>
-              <h3> Who Am I </h3>
-              <p>I'm from Rajasthan, India and am currently studying in Singapore. My journey has woven through the bustling streets of Delhi as well. At the heart of my story is a love for technology and the fascinating ways it is shaping our psychology.<br><br>
-
-                I'm currently building <a href="https://storylineai.in">StoryLine AI</a> (backed by NTU SEP), <a href="https://kamagpt.in">KamaGPT</a> (backed by NTU SIE), Pl{ai}ground and working on my YouTube channel where I make videos on tech, vlogs, and higher education.<br><br>
-                
-                In addition to my technical pursuits, I'm deeply interested in Indian and international politics. And a big time Bollywood fan.
-                 </p> <br>
-
-              <p> <b> Keywords: </b> AI, Geopolitics, India, Macro-Economics</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Yash Jain</h1>
+            <p class="last-updated">Last updated 5 March, 2024</p>
+        </header>
+        <section class="abstract">
+            <h2>ABSTRACT</h2>
+            <p>I'm from Rajasthan, India and am currently studying in Singapore. My journey has woven through the bustling streets of Delhi as well. At the heart of my story is a love for technology and the fascinating ways it is shaping our psychology.</p>
+            <p>I'm currently building StorylineAI (backed by NTU SEP), KamaGPT (backed by NTU SIE), bfairground and working on my YouTube channel where I make videos on tech, vlogs, and higher education.</p>
+            <p>In addition to my technical pursuits, I'm deeply interested in Indian and international politics. And a big time Bollywood fan.</p>
+            <p>Keywords: AI, Geopolitics, India, Macro-Economics</p>
+        </section>
+        <section class="personal-info">
+            <h2>PERSONAL INFO</h2>
+            <p>Studying: NTU CS & Business (2022-26)</p>
+            <p>YouTube: YashChopra1411</p>
+            <p>GitHub: Yash.Jain14</p>
+            <p>Resume: <a href="#" class="resume-link">Here</a></p>
+        </section>
+        <section class="stats">
+            <h2>Stats:</h2>
+            <p>YouTube Views: 425k</p>
+        </section>
+        <section class="contact">
+            <h2>CONTACT</h2>
+            <p>Email: yash012@e.ntu.edu.sg</p>
+            <p>LinkedIn: Yash Jain (Chopra)</p>
+            <p>Twitter: @YashChopra1411</p>
+        </section>
+        <section class="at-the-moment">
+            <h2>At the moment, I am.....</h2>
+            <div class="activity-box">
+                <div class="activity">Building</div>
+                <div class="activity">Reading List (2024)</div>
+                <div class="activity">Watch List (2024)</div>
             </div>
-
-            <div class=header-right>
-              <h3> Personal Info </h3>
-
-              <p> 
-                <b> Studying: </b> NTU CS & Business (2022-26) <br>
-                <b> YouTube: </b> <a href="https://YouTube.com/YashChopra1411">YashChopra1411</a> <br>
-                <b> GitHub: </b> <a href="https://github.com/YashJain14">YashJain14</a> <br>
-                <b> Resume:</b> <a href="Yash_Jain.pdf">Here</a> 
-                
-              </p>
-
-              <h4> Stats: </h4>
-                <b>YouTube Views:</b> <i> 425k </i> <br>
-
-              <h4> Contact </h4>
-              <aside class="rightnote straight">I should have shared my Insta as well but it's private</aside>
-              <b> Email:</b>  <a href="mailto:yash012@e.ntu.edu.sg">yash012@e.ntu.edu.sg</a><br>
-              <b> LinkedIn:</b> <a href="https://www.linkedin.com/in/yashchopra1411/">Yash Jain (Chopra)</a> <br>
-              <b> Twitter:</b> <a href="https://twitter.com/yashchopra1411">@YashChopra1411</a> <br>
-              
-
-            </div> 
-
-        </div>
-
-
-        <div class=left>
-          <aside> Thinking about sidenotes as annotations. But I doubt Yash is going to bother messing with these... </aside>
-
-          <p> 
-          At the moment, I am...... </p>
-          <details>
-            <summary> Building </summary>
-            <p> 
-              <ol> 
-                <li> <b><a href="https://storylineai.in/">StoryLine AI:</a></b> 
-                  Text-to-Video Generator for Creators and Educators  </li>
-                <li> <b><a href="https://kamagpt.in">KamaGPT (Shipped):</a></b> 
-                  Chatbot for sex education targeting youth in the Asia</li>
-                <li> <b><a href="#">Pl{ai}ground:</a></b> 
-                  Framer for Transformers and Diffusers</li>
-              </ol>
-            </p>
-            
-            
-           
-          </details>
-          <details>
-            <summary> Reading List (2024) </summary>
-            <p> 
-              <ol> 
-                <li> Why Bharat Matters by S. Jaishankar </li>
-                <li> Suggest me something...</li>
-              </ol>
-            </p>
-          </details>
-
-          <details>
-            <summary> Watch List (2024) </summary>
-            <p> 
-              I know I'm late......
-              <ol> 
-                <li> Batman (All movies)  </li>
-                <li> Game of Thrones (FOMO on memes) </li>
-                
-              </ol>
-            </p>
-          </details>
-
-          
-          <p> Aren't you confused if I am Yash Chopra or Yash Jain? Well, I am both. "Chopra" is my root surname, and "Jain" is the religion I follow. I use "Jain" for official purposes.</p>
-
-<h2> I. Introduction </h2>
-<p>  <i><b>"Build and Govern universes, spell down by the artistry of painting my imagination in an alive space. I sought my peace in the art that gave me the power of being the generator, operator, and destroyer god of my own world."</b> ~Yash Jain</i><br><br>
-  The realms of AI and artistic expression have merged, creating a captivating synergy that transcends mere computational processes. At the heart of this amalgamation is the concept of latent space in generative AI, where universes are born from data and imagination. This exploration delves into the fascinating interplay between AI, artistry, and Hindu philosophy.<br><br>
-  
-  This narrative embodies our journey, drawing connections between the creative potential of generative AI, the art of imagination, and the profound concepts of creation, preservation, and destruction in Hindu philosophy.
-  
- </p>
-
-
-           <h2> II. Literature Review </h2>
-
-           <p> The landscape of this field is diverse, spanning studies on generative AI models like GANs and transformers, as well as the philosophy and mythology of Hinduism. Previous works have examined generative AI as a tool for artistic expression, often emphasizing the role of latent space in creating new realities. Scholars have also delved into Hindu deities, such as Brahma, Vishnu, and Shiva, symbolizing creation, preservation, and destruction, offering insights into the cyclical nature of existence to illuminate the nexus of these themes, bridging the artistic, philosophical, and technical facets.
-              </p>
- 
-
-         
-
-        <!-- <div class=slide-out>
-          <img src="images/rectangle-book.jpg">
-          <p>  ... </p>
-           <div class=slide-out-title> READING </div>
-        </div>   -->
-
-        </div>
-
-        <div class=right>
-          <h2> III. Discussion </h2>
-
-          <p><b> Universe, Alive Space, and World in the Context of Latent Space:</b><br>
-           The notion of "universes" finds resonance in the concept of latent space in generative AI. This abstract, multi-dimensional realm serves as the heart of AI's creative potential, encoding meaningful internal representations of externally observed events. In essence, it's akin to how our minds distill complex experiences into concise forms.<br><br>
-           
-           <b>Spell, Painting, and Imagination in Context of Prompts:</b><br>
-           "spell," "painting," and "imagination" refers to the interaction between human creators and AI models. The "spell" represents the prompts; natural language commands given to these models, akin to an incantation that initiates the artistic process. The "painting" manifests through the model's generation of art, translating abstract ideas into tangible creations. "Imagination" signifies the shared creative space where AI and human ingenuity unite, giving life to novel artistic expressions.<br><br>
-           
-           <b>Generator, Operator, and Destroyer:</b><br>
-           These line's allusion to the Hindu trinity of gods, Brahma, Vishnu, and Shiva, corresponds to the creative process in AI. AI models can be viewed as creators (generators), operators who refine and curate output, and sometimes even as destroyers when their work evolves or gets destroyed in favor of a new creation like diffusion models.<br>
-           </p>
-
-
-        <h2> IV. Conclusion </h2>
-
-        <p> In conclusion, the fusion of AI, artistry, and Hindu philosophy unveils a captivating tapestry of interconnected ideas. The latent space in generative AI becomes a canvas for imagination, guided by spell-like prompts, empowering creators to be the gods of their own worlds, mirroring the divine roles of creation, preservation, and destruction found in Hindu mythology. Understanding this synthesis enriches our comprehension of AI's creative potential and offers profound insights into the ancient wisdom of Hindu philosophy. As we navigate this uncharted territory, we stand on the cusp of forging new creative universes, where the boundaries between art, technology, and spirituality blur, beckoning us to explore the limitless frontiers of human and machine imagination. </p>
-
-
-
-</div>
-
-<hr> 
-
-
-
-
-
-<div class=left> 
-
-<h2> Recommendations </h2>
-<div class=collection>
-  <!-- <div class=collection-title> Music Recommendations </div> -->
-  <div class=item> 
-    <a href="https://www.youtube.com/watch?v=0nR9JS2WsNg"><img src="bhag.jpeg"></a>
-  </div><div class=item> 
-    <a href="https://www.youtube.com/watch?v=MlThQTo6D8A"><img src="until.jpeg"></a>
-  </div><div class=item> 
-    <aside class="straight"> Tony Stark made me fall in love with Tech (and Money). </aside>
-    <a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)"><img src="ironman.jpeg"></a>
-  </div><div class=item> 
-    <a href="https://www.primevideo.com/detail/Silicon-Valley/0PHZ6LOP10TB423SCOM0BMCFMM"><img src="silicon.webp"></a>
-  </div>
-</div>
-
-
-
-</div>
-
-
-<div class=right>
-  <h2>  Acknowledgements </h2>
-  <table>
-    <thead>
-      <th> People </th> 
-      <th> Notable features </th>
-    </thead>
-    <tbody>
-      <tr>
-        <td> My Parents </td>
-        <td> Do I need to say more?</td>
-      </tr>
-      <tr>
-        <td> YouTube Teachers </td>
-        <td> You are my life saviours</td>
-      </tr>
-
-      <tr>
-        <td> Pradyumna </td>
-        <td> This website's inspiration </td>
-      </tr>
-
-    </tbody>
-  </table>
-
-    <h2> References </h2>
-
-    <p> A list of writing that has shaped my thinking. This includes writing of different lengths and formats<br><br>
-
- <b>Random Stanford Essays</b>
- <p></p>more coming soon</p>
-        
-
-  </div> 
-  
-  </main>
-
-  </body>
+        </section>
+        <section class="clarification">
+            <p>Aren't you confused if I am Yash Chopra or Yash Jain?</p>
+            <p>Well, I am both. "Chopra" is my root surname, and "Jain" is the religion I follow. I use "Jain" for official purposes.</p>
+        </section>
+        <section class="introduction">
+            <h2>I. INTRODUCTION</h2>
+            <p>"Build and Govern universes, spell down by the artistry of painting my imagination in an alive space. I sought my peace in the art that gave me the power of being the generator, operator, and destroyer god of my own world." - Yash Jain</p>
+            <p>The realms of AI and artistic expression have merged, creating a captivating synergy that transcends where com putational processes. At the heart of this amalgamation is the concept of latent space in generative AI, where uni</p>
+        </section>
+        <section class="discussion">
+            <h2>III. DISCUSSION</h2>
+            <h3>Universe, Alive Space, and World in the Context of Latent Space:</h3>
+            <p>The notion of "universes" finds resonance in the concept of latent space in generative AI. This abstract, multi-di mensional realm serves as the heart of AI's creative po tential, encoding meaningful internal representations of externally observed events. In essence, it's akin to how our minds distill complex experiences into concise forms.</p>
+            <h3>Spell, Painting, and Imagination in Context of Prompts:</h3>
+            <p>"spell", "painting," and "imagination" refers to the interac tion between human creators and AI models. The "spell" represents the prompts; natural language commands given to these models, akin to an incantation that initi ates the artistic process. The "painting" manifests through the model's generation of art, translating ab stract ideas into tangible creations. "Imagination" signi fies the shared creative space where AI and human inge nuity unite, giving life to novel artistic expressions.</p>
+            <h3>Generator, Operator, and Destroyer:</h3>
+            <p>These line's allusion to the Hindu trinity of gods, Brahma, Vishnu, and Shiva, aptly captures the creative process in AI. AI models can be viewed as creators (gen</p>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
 </html>
