@@ -3,33 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Site</title>
+    <title>Denali</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-    <div class="sidebar">
-        <div class="profile">
-            <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
-            <h3>Yash Jain</h3>
-        </div>
+    <header>
         <nav>
-            <ul class="social-links">
-                <li><a href="#" target="_blank"><i class="fab fa-youtube"></i></a></li>
-                <li><a href="#" target="_blank"><i class="fab fa-github"></i></a></li>
-                <li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <a href="#" class="logo">Denali</a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
         </nav>
-        <div class="toggle-btn">
-            <span>&lt;</span>
-        </div>
-    </div>
-    <div class="content">
-        <h1>Blog Posts</h1>
-        <div class="blog-posts">
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+                <p>Denali is a creative responsive website template featuring a modern and sleek design with smooth scroll and image scrolling animations.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <h2>Featured Posts</h2>
+        </section>
+        <section class="posts">
             <!-- Blog post elements will be dynamically added here -->
+        </section>
+        <div class="load-more">
+            <button>More posts</button>
         </div>
-    </div>
+    </main>
+    <footer>
+        <p>&copy; Denali</p>
+    </footer>
     <script src="https://kit.fontawesome.com/your-font-awesome-kit.js"></script>
     <script src="script.js"></script>
 </body>
