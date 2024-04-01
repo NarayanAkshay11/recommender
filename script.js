@@ -1,28 +1,23 @@
-const toggleBtn = document.querySelector('.toggle-btn');
-const sidebar = document.querySelector('.sidebar');
+// Load more posts
+const loadMoreBtn = document.querySelector('.load-more button');
+const postsSection = document.querySelector('.posts');
 
-toggleBtn.addEventListener('click', () => {
-    sidebar.classList.toggle('collapsed');
-});
+let currentPostIndex = 0;
+const posts = [
+    {
+        image: 'post1.jpg',
+        title: 'Coffee sugar chicory seasonal espresso barista americana',
+        content: 'Aromatic french press americano in, acerbic turkish medium cup grounds froth. Brewed thick grounds aroma blue mountain chicory aromatic espresso.'
+    },
+    {
+        image: 'post2.jpg',
+        title: 'Overlaid the jeggers uselesslymuch excluding',
+        content: 'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.'
+    },
+    // Add more post objects here
+];
 
-// Example function to dynamically add blog posts
-function addBlogPost(title, content) {
-    const blogPostsContainer = document.querySelector('.blog-posts');
-    const blogPost = document.createElement('div');
-    blogPost.classList.add('blog-post');
-
-    const blogTitle = document.createElement('h2');
-    blogTitle.textContent = title;
-
-    const blogContent = document.createElement('p');
-    blogContent.textContent = content;
-
-    blogPost.appendChild(blogTitle);
-    blogPost.appendChild(blogContent);
-
-    blogPostsContainer.appendChild(blogPost);
-}
-
-// Example usage
-addBlogPost('My First Blog Post', 'This is the content of my first blog post.');
-addBlogPost('Another Blog Post', 'Here is the content of another blog post.');
+function addPostsToDOM(startIndex, endIndex) {
+    for (let i = startIndex; i < endIndex; i++) {
+        const post = posts[i];
+        const postElement = document.createElement('
