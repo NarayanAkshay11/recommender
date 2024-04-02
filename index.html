@@ -5,69 +5,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Blog Site</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
   <header>
-    <div class="top-bar">
-      <h1>My Blog Site</h1>
+    <nav>
+      <div class="logo">
+        <h1>My Blog Site</h1>
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search...">
+        <button><i class="fas fa-search"></i></button>
+      </div>
       <a href="#" class="login-btn">Log In</a>
-    </div>
-    <div class="search-bar">
-      <input type="text" placeholder="Search...">
-      <button>Search</button>
-    </div>
+    </nav>
   </header>
 
-  <nav id="sidebar">
-    <div class="sidebar-header">
-      <h3>Resources</h3>
-      <button id="sidebar-toggle">&#9776;</button>
-    </div>
-    <ul>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">Academy</a></li>
-      <li><a href="#">Categories</a>
-        <ul>
-          <li><a href="#">All</a></li>
-          <li><a href="#">Expert Hot Seat</a></li>
-          <li><a href="#">Facilitation</a></li>
-          <li><a href="#">Webinar</a></li>
-          <li><a href="#">Retrium Updates</a></li>
-          <li><a href="#">Collaboration and Communication</a></li>
-          <li><a href="#">Retrospective Quick Tips</a></li>
-          <li><a href="#">Agile Practices 101</a></li>
-        </ul>
-      </li>
-    </ul>
-  </nav>
+  <div class="container">
+    <aside>
+      <div class="sidebar-header">
+        <h3>Categories</h3>
+      </div>
+      <ul>
+        <li><a href="#">All</a></li>
+        <li><a href="#">Expert Hot Seat</a></li>
+        <li><a href="#">Facilitation</a></li>
+        <li><a href="#">Webinar</a></li>
+        <li><a href="#">Retrium Updates</a></li>
+        <li><a href="#">Collaboration and Communication</a></li>
+        <li><a href="#">Retrospective Quick Tips</a></li>
+        <li><a href="#">Agile Practices 101</a></li>
+      </ul>
+    </aside>
 
-  <main>
-    <section class="webinar-cards">
+    <main>
       <article>
         <img src="placeholder-image.jpg" alt="Placeholder Image">
-        <h3>Webinar</h3>
-        <h4>Successfully Distributed: How To Thrive As a Remote Agile Team (Webinar Follow-Up)</h4>
-        <p>Agile Practices 101, Remote Work</p>
-        <a href="#" class="read-more">Read more</a>
+        <div class="post-content">
+          <h2>Successfully Distributed: How To Thrive As a Remote Agile Team</h2>
+          <p>Learn how to overcome the challenges of remote work and thrive as a distributed agile team.</p>
+          <a href="#" class="read-more">Read More</a>
+        </div>
       </article>
 
       <article>
         <img src="placeholder-image.jpg" alt="Placeholder Image">
-        <h3>Webinar</h3>
-        <h4>Webinar Blog Recap: Suddenly Distributed: Tools for Effective Agile Teams</h4>
-        <p>Remote Work, Agile Practices 101, Psychological Safety</p>
-        <a href="#" class="read-more">Read more</a>
+        <div class="post-content">
+          <h2>Webinar Blog Recap: Suddenly Distributed: Tools for Effective Agile Teams</h2>
+          <p>Discover the essential tools and techniques for effective agile teams in a suddenly distributed environment.</p>
+          <a href="#" class="read-more">Read More</a>
+        </div>
       </article>
 
       <article>
         <img src="placeholder-image.jpg" alt="Placeholder Image">
-        <h3>Webinar</h3>
-        <h4>Webinar Recap: Effective Retrospectives in the Age of Coronavirus</h4>
-        <p>Retrospective Quick Tips, Remote Work</p>
-        <a href="#" class="read-more">Read more</a>
+        <div class="post-content">
+          <h2>Webinar Recap: Effective Retrospectives in the Age of Coronavirus</h2>
+          <p>Learn how to conduct effective retrospectives and improve your team's performance during the coronavirus pandemic.</p>
+          <a href="#" class="read-more">Read More</a>
+        </div>
       </article>
-    </section>
-  </main>
+    </main>
+  </div>
 
   <script src="script.js"></script>
 </body>
