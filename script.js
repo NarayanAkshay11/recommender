@@ -1,14 +1,34 @@
-// Toggle sidebar on mobile
+// Sidebar toggle
 const sidebar = document.getElementById('sidebar');
-const sidebarToggle = document.getElementById('sidebar-toggle');
+const menuToggle = document.getElementById('menuToggle');
 
-sidebarToggle.addEventListener('click', () => {
-  sidebar.classList.toggle('open');
+menuToggle.addEventListener('click', () => {
+  sidebar.classList.toggle('sidebar-open');
 });
 
-// Close sidebar when clicking outside on mobile
-window.addEventListener('click', (e) => {
-  if (window.innerWidth <= 768 && !sidebar.contains(e.target) && !sidebarToggle.contains(e.target)) {
-    sidebar.classList.remove('open');
-  }
+// Search functionality
+const searchInput = document.getElementById('searchInput');
+const searchBtn = document.getElementById('searchBtn');
+const articles = document.querySelectorAll('article');
+
+searchBtn.addEventListener('click', () => {
+  const searchTerm = searchInput.value.toLowerCase();
+  articles.forEach(article => {
+    const postContent = article.querySelector('.post-content').textContent.toLowerCase();
+    if (postContent.includes(searchTerm)) {
+      article.style.display = 'flex';
+    } else {
+      article.style.display = 'none';
+    }
+  });
+});
+
+// Add smooth scrolling behavior
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
 });
