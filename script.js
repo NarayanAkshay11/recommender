@@ -11,11 +11,12 @@ const searchInput = document.getElementById('searchInput');
 const searchBtn = document.getElementById('searchBtn');
 const articles = document.querySelectorAll('article');
 
-searchBtn.addEventListener('click', () => {
+searchInput.addEventListener('input', () => {
   const searchTerm = searchInput.value.toLowerCase();
   articles.forEach(article => {
-    const postContent = article.querySelector('.post-content').textContent.toLowerCase();
-    if (postContent.includes(searchTerm)) {
+    const postTitle = article.querySelector('h2').textContent.toLowerCase();
+    const postContent = article.querySelector('p').textContent.toLowerCase();
+    if (postTitle.includes(searchTerm) || postContent.includes(searchTerm)) {
       article.style.display = 'flex';
     } else {
       article.style.display = 'none';
