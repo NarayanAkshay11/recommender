@@ -1,3 +1,17 @@
+// Add rotation effect to the header image on hover
+const logoImage = document.querySelector('.logo img');
+
+logoImage.addEventListener('mouseover', () => {
+  logoImage.style.transform = 'rotate(360deg)';
+});
+
+logoImage.addEventListener('mouseout', () => {
+  logoImage.style.transform = 'rotate(0deg)';
+});
+
+
+
+
 // Sidebar toggle
 const sidebar = document.getElementById('sidebar');
 const menuToggle = document.getElementById('menuToggle');
